@@ -1,0 +1,41 @@
+.background {
+    // width: 100%;
+    // margin-top: -100vh;
+    background-color: rgba(0,0,0,0.5);
+    // z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+
+
+    .sidebar {
+        // position: fixed;
+        top: 0;
+        margin-right: -40vw;
+        width: 40vw;
+        height: 100vh;
+        background-color: #f7f7f7; 
+        
+        .sidebarContent {
+            padding:20px;
+        }
+    
+        .closeButton {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    }
+    
+    .sidebar.open {
+        margin-right: 0px;
+        // backdrop-filter: blur(5px);
+        // blur the page behind the sidebar
+    }
+}
+
+.background.visible {
+    z-index: 1;
+}

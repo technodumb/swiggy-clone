@@ -1,0 +1,199 @@
+.App{
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+    .AppContents {
+        background-color: white;
+        margin-top:-100vh;
+    }
+
+}
+
+.hero {
+    // z-index: 1;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    .heroLeft{
+        max-width: 100px;
+    }
+
+    .hero-content {
+        background-color: white;
+        box-sizing: border-box;
+        padding: 30px 70px 70px 30px;
+        max-width: 700px;
+        min-width: 700px;
+
+        .header {
+            padding: 30px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                height: 60px;
+                width: 210px;
+                fill: #fc8019;
+            }
+
+            .header-links{
+                display: flex;
+                button{
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    text-decoration: none;
+
+                    .btn {
+                        padding: 0 25px;
+                        height: 40px;
+                        line-height: 40px;
+                        vertical-align: middle;
+                        text-align: center;
+                        font-size: 15px;
+                        font-weight: bold;
+                    }
+
+                    .loginBtn {
+                        background-color: white;
+                        color: black;
+                    }
+                    .loginBtn:hover {
+                        color: #fc8019;
+                    }
+
+                    .signupBtn {
+                        background-color: black;
+                        color: white;
+                    }
+                }
+
+            }
+        }
+
+        .heroTitle {
+            padding: 30px 0;
+            h1{
+                font-size: 38px;
+                font-weight: 700;
+                color: #282c3f;
+                margin: 0;
+            }
+
+            p{
+                margin: 10px 0;
+                font-weight: 400;
+                font-family: ProximaNova,arial,Helvetica Neue,sans-serif;
+                font-size: 24px;
+                color: #686b78;
+            }
+        }
+        .heroSearch {
+            display: flex;
+            // margin: 30px 0;
+            height: 60px;
+            justify-content: space-between;
+            // width: 50%;
+            
+            .heroSearchInputDiv {
+                border: #bebfc5 solid 1px;
+                border-right: none;
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+                // width: 100%;
+                
+                .heroSearchInput {
+                    color: rgb(40, 44, 63);
+                    flex:1;
+                    caret-color: #fc8019;
+                    padding: 0 20px;
+                    font: 500 17px 'Montserrat',sans-serif;
+                    border: none;
+                    outline: none;
+                    // cursor: default;
+                }
+    
+                .locateMeButton {
+                    display: flex;
+                    align-items: center;
+                    background-color: #fff;
+                    color: rgb(83, 86, 101);
+                    font: 600 13px "Montserrat",Helvetica,Arial,sans-serif;
+                    border: none;
+                    outline: none;
+                    padding: 0 10px;
+                    margin: 10px;
+                    line-height: 0;
+                    cursor: pointer;
+
+                    .locationIcon {
+                        padding-right: 5px;
+                    }
+                }
+
+                .locateMeButton:hover {
+                    background-color: #eeeeee;
+                }
+            }
+
+            .heroSearchInputDiv:focus-within {
+                border: #fc8019 solid 1px;
+            }
+            
+            .findFoodButton {
+                padding: 0 20px;
+                background-color: orange;
+                color: white;
+                font: bold 18px HelveticaNeue,Helvetica,Arial,sans-serif;
+                border: orange solid 1px;
+                cursor: pointer;
+            }
+        }
+
+        .popularCities {
+            color: #aaaaaa;
+
+            h4{
+                font-weight: 500;
+                font-size: 15px;
+            }
+            
+            .cities {
+                .cityLinkList{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0;
+                    .cityLink{
+                        cursor: pointer;
+                        font: 600 15px "HelveticaNeue",Helvetica,Arial,sans-serif;
+                        padding-right: 8px;
+                        background-color: white;
+                        border: 0;                        
+                    }
+
+                    .dark {
+                        color: #6a6a6a;
+                    }
+
+                    .light {
+                        color: #a0a0a0;
+                    }
+                }
+            }
+        }
+    }
+
+    .heroImageDiv{
+        min-width: 550px;
+        width: 45vw;
+        // height: 100%;
+        background-image: url("https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+ 
+}

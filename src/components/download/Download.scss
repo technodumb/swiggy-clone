@@ -1,0 +1,84 @@
+.download {
+    display: flex;
+    height: 570px;
+    justify-content: center;
+
+    .downloadContent {
+        display: flex;
+        justify-content: space-between;
+        min-width: 1250px;
+        max-width: 1250px;
+        // background-color: green;
+
+        .downloadLeft {
+            align-self: center;
+            padding: 0 30px;
+            width: 380px;
+
+            h1 {
+                width: 300px;
+                box-sizing: border-box;
+                font-family: 'Montserrat';
+                font-size: 36px;
+                font-weight: 600;
+                color: #282c3f;
+                margin: 0;
+            }
+
+            p {
+                margin-bottom: 60px;
+                box-sizing: border-box;
+                font-size: 19px;
+                color: #7e808c;
+            }
+            
+            .downloadButtons {
+                display: flex;
+                justify-content: space-between;
+                // justify-content: flex-end;
+
+
+                .downloadButton {
+                    padding: 0;
+                    border: none;
+                    box-sizing: border-box;
+                    // height: 50px;
+
+                    .downloadButtonImg {
+                        // width: 50px;
+                        height: 54px;
+                        // padding: 10px;
+                        margin: 0;
+                        // box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    
+        .downloadRight {
+            display: flex;
+            
+            .appImg {
+                height: 85%;
+            }
+
+            .iosApp {
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+    }
+
+    .leftpad{
+        // flex:1;
+        // width: 100vw;
+        height: 100%;
+    }
+
+    .rightpad{
+        // flex:1;
+        // width: 100vw;
+        height: 100%;
+    }
+
+}
